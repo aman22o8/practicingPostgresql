@@ -16,6 +16,7 @@ organisation VARCHAR(100) NOT NULL
     async ()=>{
         try {
           const result = await pool.query(queryCreateingTable)
+         
             console.log("TABLE CREATED SUCCESFULLY")
         } catch (error) {
             console.log(error.message)

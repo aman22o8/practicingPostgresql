@@ -2,6 +2,9 @@ const {Pool} =require('pg');
 const path=require('path')
 
 
+// console.log('THIS IS MY PATH',path.join(__dirname+'.env'))
+// console.log('THIS IS MY PATH_1',path.join(__dirname,'../../.env')) //by this we have accessing the .env folder in db folder as IT IS in app folder
+
 require('dotenv').config({path:path.join(__dirname,'../../.env')});
 
 console.log('Connecting with:');
